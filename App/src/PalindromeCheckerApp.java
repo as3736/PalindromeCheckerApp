@@ -1,11 +1,16 @@
+import java.util.Scanner;
+
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        // Hardcoded string
-        String word = "madam";
+        Scanner sc = new Scanner(System.in);
 
-        // Reverse the string
+        System.out.println("Welcome to Palindrome Checker App");
+
+        System.out.print("Enter a word: ");
+        String word = sc.nextLine();
+
         String reversed = "";
 
         for (int i = word.length() - 1; i >= 0; i--) {
@@ -19,5 +24,7 @@ public class PalindromeCheckerApp {
         }
 
         System.out.println("Program exited successfully.");
+
+        sc.close();
     }
 }
