@@ -1,28 +1,26 @@
-public class uc4PalindromeCheckerApp {
+public class uc5PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-
         String input = "madam";
 
-
-        char[] characters = input.toCharArray();
+        char[] charArray = input.toCharArray();
 
         int start = 0;
-        int end = characters.length - 1;
+        int end = charArray.length - 1;
 
         boolean isPalindrome = true;
 
-        // Two-pointer comparison
         while (start < end) {
-            if (characters[start] != characters[end]) {
+
+            if (charArray[start] != charArray[end]) {
                 isPalindrome = false;
                 break;
             }
+
             start++;
             end--;
         }
-
 
         if (isPalindrome) {
             System.out.println(input + " is a Palindrome");
